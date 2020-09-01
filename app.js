@@ -80,7 +80,7 @@ async function start() {
     if (fs.existsSync(path)) {
       content = fs.readFileSync(path, "utf8");
     }
-    await sendNotify("京东签到 " + new Date().format("yyyy-MM-dd hh:mm:ss"), content);
+    await sendNotify("京东签到", content);
     console.log('发送结果完毕')
   }
 }
